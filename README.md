@@ -1,39 +1,30 @@
-❤️ Heart Risk Gen AI
+# ❤️ Heart Risk Gen AI
 
 An AI-powered heart disease prediction web application built using Machine Learning, Streamlit, and Generative AI.
 
 The application predicts the possibility of heart disease based on user-provided health parameters and provides an AI-generated explanation with general health guidance.
 
-🚀 Features
+## 🚀 Features
 
-Heart Disease Prediction: Uses a trained Machine Learning model to generate predictions.
+- **Heart Disease Prediction:** Uses a trained Machine Learning model to generate predictions.
+- **Interactive Web Interface:** Built with Streamlit for a simple and user-friendly experience.
+- **AI-Powered Explanation:** Uses the Gemini API to explain the prediction in simple language.
+- **Health Guidance:** Provides general lifestyle and preventive health information.
+- **Model Preprocessing:** Uses saved preprocessing files to prepare input data for prediction.
 
-Interactive Web Interface: Built with Streamlit for a simple and user-friendly experience.
+## 🛠️ Tech Stack
 
-AI-Powered Explanation: Uses the Gemini API to explain the prediction in simple language.
+- Python
+- Machine Learning
+- Scikit-learn
+- Streamlit
+- Google Gemini API
+- Pandas and NumPy
+- Pickle for loading saved model and preprocessing files
 
-Health Guidance: Provides general lifestyle and preventive health information.
+## 📁 Project Structure
 
-Model Preprocessing: Uses saved preprocessing files to prepare input data for prediction.
-
-🛠️ Tech Stack
-
-Python
-
-Machine Learning
-
-Scikit-learn
-
-Streamlit
-
-Google Gemini API
-
-Pandas and NumPy
-
-Pickle for loading saved model and preprocessing files
-
-📁 Project Structure
-
+```text
 heart-risk-gen-ai/
 ├── app.py
 ├── knn_heart_model.pkl
@@ -44,76 +35,84 @@ heart-risk-gen-ai/
 ├── .gitignore
 └── .streamlit/
     └── secrets.toml
+```
 
-Note: The secrets.toml file is used locally for secrets and must not be uploaded to GitHub.
+**Note:** The `secrets.toml` file is used locally for secrets and must not be uploaded to GitHub.
 
-⚙️ Run Locally
+## ⚙️ Run Locally
 
-1. Clone the repository
+### 1. Clone the repository
 
+```bash
 git clone https://github.com/Student-Satyam/heart-risk-gen-ai-.git
 cd heart-risk-gen-ai-
+```
 
-2. Create a virtual environment
+### 2. Create a virtual environment
 
+```bash
 python -m venv .venv
+```
 
 Activate it on Windows:
 
+```powershell
 .\.venv\Scripts\Activate.ps1
+```
 
-3. Install dependencies
+### 3. Install dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-4. Configure the Gemini API key
+### 4. Configure the Gemini API key
 
-Create .streamlit/secrets.toml and add:
+Create `.streamlit/secrets.toml` and add:
 
+```toml
 GEMINI_API_KEY = "your_actual_gemini_api_key"
+```
 
 Replace the placeholder with your own API key. Never publish your API key in your repository.
 
-5. Run the application
+### 5. Run the application
 
+```bash
 streamlit run app.py
+```
 
-The application will open in your browser, usually at http://localhost:8501.
+The application will open in your browser, usually at `http://localhost:8501`.
 
-☁️ Deployment
+## ☁️ Deployment
 
-The application can be deployed using Streamlit Community Cloud.
+The application can be deployed using **Streamlit Community Cloud**.
 
-Push the project to GitHub.
-
-Sign in to Streamlit Community Cloud.
-
-Connect the GitHub repository.
-
-Select app.py as the main file.
-
-Add GEMINI_API_KEY in the app's Secrets settings.
-
-Deploy the application.
+1. Push the project to GitHub.
+2. Sign in to Streamlit Community Cloud.
+3. Connect the GitHub repository.
+4. Select `app.py` as the main file.
+5. Add `GEMINI_API_KEY` in the app's Secrets settings.
+6. Deploy the application.
 
 Docker is not required for this deployment method.
 
-🔐 Security
+## 🔐 Security
 
-Keep API keys private.
+- Keep API keys private.
+- Do not commit `.streamlit/secrets.toml`.
+- Store deployment secrets in the hosting platform's secrets settings.
 
-Do not commit .streamlit/secrets.toml.
-
-Store deployment secrets in the hosting platform's secrets settings.
-
-⚠️ Medical Disclaimer
+## ⚠️ Medical Disclaimer
 
 This application is an educational and informational project. Its predictions and AI-generated explanations are not a medical diagnosis and must not replace professional medical advice. Consult a qualified healthcare professional for medical concerns.
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Satyam Singh
+**Satyam Singh**
 
-GitHub: Student-Satyam
+GitHub: [Student-Satyam](https://github.com/Student-Satyam)
 
-Built as a Machine Learning and Generative AI project to explore the integration of predictive models with AI-generated explanations.
+---
+
+*Built as a Machine Learning and Generative AI project to explore the integration of predictive models with AI-generated explanations.*
